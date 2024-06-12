@@ -12,13 +12,13 @@ pip install -r requirements.txt
 ``` -->
 
 ```bash
-mkdocs serve
+# mkdocs serve
 
 mkdocs build --clean
 
 git add . && git commit -m "update" && git push
 
-git add site && git commit -m "update"
+# git add site && git commit -m "update"
 git subtree push --prefix site origin gh-pages
 
 ```
