@@ -63,8 +63,8 @@ copyright: Copyright &copy; 2023 ZWX # 左下角的版权声明
 
 plugins:
   - search
-  # - git-revision-date-localized: # 用于将上次更新日期添加到您的网站页面
-  #     locale: zh
+  - git-revision-date-localized: # 用于将上次更新日期添加到您的网站页面
+      locale: zh
 
 extra_javascript:
   - javascripts/extra.js
