@@ -18,6 +18,9 @@ mkdocs build --clean
 
 git add . && git commit -m "update" && git push
 
+git add site && git commit -m "update"
+git subtree push --prefix site origin gh-pages
+
 ```
 
 <!-- ```bash
