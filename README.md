@@ -4,19 +4,23 @@
 
 
 
-<!--
+
 ## usage
 
-``` bash
+<!-- ``` bash
 pip install -r requirements.txt
-```
+``` -->
 
 ```bash
 mkdocs serve
 
+mkdocs build --clean
+
+git add . && git commit -m "update" && git push
+
 ```
 
-```bash
+<!-- ```bash
 mkdocs build 
 # --clean
 
@@ -33,8 +37,8 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs -h` - Print help message and exit.
 
 ## Project layout
--->
+
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        ...       # Other markdown pages, images and other files. -->
