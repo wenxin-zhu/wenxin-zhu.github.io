@@ -8,7 +8,12 @@
 ## usage
 
 ```bash
-# mkdocs serve
+
+mkdocs serve
+
+```
+
+```bash
 
 mkdocs build --clean
 
