@@ -17,7 +17,7 @@ nav:
   - 论文收藏: pdfs.md
   - 博客收藏: blog.md
   - 友链: friend.md
-  - 关于我: about.md
+  # - 关于我: about.md
 
 site_name: 竹星 · 梦华 # 网站名字
 site_url: http://www.wxzhu.top/ # 网站地址
