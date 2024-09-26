@@ -1,6 +1,6 @@
 # mkdocs
 
-网站链接: [wxzhu.top](http://wxzhu.top)
+网站链接: [wxzhu.net](http://wxzhu.net)
 
 
 
