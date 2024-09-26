@@ -1,0 +1,1778 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="zwx">
+      
+      
+        <link rel="canonical" href="http://www.wxzhu.net/tools/">
+      
+      
+        <link rel="prev" href="../STL/">
+      
+      
+        <link rel="next" href="../knowledge/">
+      
+      
+      <link rel="icon" href="../img/zxmh.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>Tools - 竹星 · 梦华</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <meta name="robots" content="noindex, nofollow" />
+
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cmake" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="竹星 · 梦华" class="md-header__button md-logo" aria-label="竹星 · 梦华" data-md-component="logo">
+      
+  <img src="../img/zxmh.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            竹星 · 梦华
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tools
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="竹星 · 梦华" class="md-nav__button md-logo" aria-label="竹星 · 梦华" data-md-component="logo">
+      
+  <img src="../img/zxmh.png" alt="logo">
+
+    </a>
+    竹星 · 梦华
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../STL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    STL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cmake" class="md-nav__link">
+    Cmake
+  </a>
+  
+    <nav class="md-nav" aria-label="Cmake">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cmake" class="md-nav__link">
+    1 Cmake编译项目
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conda" class="md-nav__link">
+    Conda
+  </a>
+  
+    <nav class="md-nav" aria-label="Conda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-anaconda" class="md-nav__link">
+    1 创建Anaconda 环境
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker 文档
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker 文档">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 容器创建
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-docker" class="md-nav__link">
+    2 docker命令
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    Git
+  </a>
+  
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gitee" class="md-nav__link">
+    1 Gitee上传代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-log" class="md-nav__link">
+    2 log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-diff" class="md-nav__link">
+    3 diff
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-branch" class="md-nav__link">
+    4 branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-remote" class="md-nav__link">
+    5 remote
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-stash" class="md-nav__link">
+    6 stash
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vim" class="md-nav__link">
+    vim
+  </a>
+  
+    <nav class="md-nav" aria-label="vim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vim" class="md-nav__link">
+    1 vim个人常用命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 模式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 操作符
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 操作符+动作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 大小写转换
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    ssh
+  </a>
+  
+    <nav class="md-nav" aria-label="ssh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ssh-docker" class="md-nav__link">
+    1 ssh 远程连接 docker 容器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ssh" class="md-nav__link">
+    2 ssh免密登录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3 端口转发
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    图床
+  </a>
+  
+    <nav class="md-nav" aria-label="图床">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    1 图床配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    别名
+  </a>
+  
+    <nav class="md-nav" aria-label="别名">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-alias" class="md-nav__link">
+    1 alias 命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2 个人常用的别名
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    零碎知识
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../zhaichao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    句子摘抄
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../link/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    链接收藏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdfs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    论文收藏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    博客收藏
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../friend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    友链
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cmake" class="md-nav__link">
+    Cmake
+  </a>
+  
+    <nav class="md-nav" aria-label="Cmake">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cmake" class="md-nav__link">
+    1 Cmake编译项目
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conda" class="md-nav__link">
+    Conda
+  </a>
+  
+    <nav class="md-nav" aria-label="Conda">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-anaconda" class="md-nav__link">
+    1 创建Anaconda 环境
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker 文档
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker 文档">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1 容器创建
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-docker" class="md-nav__link">
+    2 docker命令
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    Git
+  </a>
+  
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gitee" class="md-nav__link">
+    1 Gitee上传代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-log" class="md-nav__link">
+    2 log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-diff" class="md-nav__link">
+    3 diff
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-branch" class="md-nav__link">
+    4 branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-remote" class="md-nav__link">
+    5 remote
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-stash" class="md-nav__link">
+    6 stash
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vim" class="md-nav__link">
+    vim
+  </a>
+  
+    <nav class="md-nav" aria-label="vim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-vim" class="md-nav__link">
+    1 vim个人常用命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2 模式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3 操作符
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4 操作符+动作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5 大小写转换
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh" class="md-nav__link">
+    ssh
+  </a>
+  
+    <nav class="md-nav" aria-label="ssh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-ssh-docker" class="md-nav__link">
+    1 ssh 远程连接 docker 容器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ssh" class="md-nav__link">
+    2 ssh免密登录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3 端口转发
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    图床
+  </a>
+  
+    <nav class="md-nav" aria-label="图床">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    1 图床配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    别名
+  </a>
+  
+    <nav class="md-nav" aria-label="别名">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-alias" class="md-nav__link">
+    1 alias 命令
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2 个人常用的别名
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Tools</h1>
+
+<h2 id="cmake">Cmake</h2>
+<h3 id="1-cmake">1 Cmake编译项目</h3>
+<p><img alt="image-20230413011019341" src="https://zwx-pic.oss-cn-beijing.aliyuncs.com/img/image-20230413011019341.png" /></p>
+<blockquote>
+<p>编写项目代码的步骤</p>
+</blockquote>
+<p>1、新建一个文件夹，用于存放你的项目文件，并且用vscode打开它。</p>
+<p>2、新建一个include文件夹，用于存放所有的头文件，注意头文件的编写注意点。</p>
+<p>3、新建一个src文件夹，用于存放所有的源文件。</p>
+<p>4、根目录下放一个main.cc，用来编写main函数。</p>
+<p>5、写好cmake lists文件，存放在根目录。</p>
+<p>6、执行以下命令，进行编译</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 新建一个build文件夹，用于存放cmake编译信息，不用自己管</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mkdir<span class="w"> </span>build<span class="w"> </span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># 进入build文件夹</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">cd</span><span class="w"> </span>build<span class="w">    </span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># 调用cmake工具，“..”表示cmake lists文件所在的路径。</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>cmake<span class="w"> </span>..<span class="w">     </span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># 执行编译链接，得到可执行文件，会自动存放在build文件夹中</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>make<span class="w">          </span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># 运行可执行文件（程序）</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>./tjurm_tutorial<span class="w"> </span>
+</code></pre></div>
+<blockquote>
+<p>exec.cmd</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>@echo<span class="w"> </span>off
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">if</span><span class="w"> </span>exist<span class="w"> </span>build<span class="w"> </span><span class="o">(</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nb">echo</span><span class="w"> </span>build<span class="w"> </span>exist
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="o">)</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="o">(</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span>mkdir<span class="w"> </span>build
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="o">)</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nb">cd</span><span class="w"> </span>build
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>cmake<span class="w"> </span>-G<span class="w"> </span><span class="s2">&quot;MinGW Makefiles&quot;</span><span class="w"> </span>..
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>mingw32-make
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>exe_cmake
+</code></pre></div>
+<blockquote>
+<p>CMakeLists.txt</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span><span class="w"> </span><span class="s">3.5</span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c"># 项目名称</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">project</span><span class="p">(</span><span class="s">exe_cmake</span><span class="p">)</span><span class="w">  </span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c"># 设置编译器</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_C_COMPILER</span><span class="w"> </span><span class="s2">&quot;gcc&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_COMPILER</span><span class="w"> </span><span class="s2">&quot;g++&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c"># c++版本为c++11，</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_STANDARD</span><span class="w"> </span><span class="s">11</span><span class="p">)</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c"># 编译类型:Debug(调试), Release(发布)</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_BUILD_TYPE</span><span class="w"> </span><span class="s">RELEASE</span><span class="p">)</span><span class="w">                               </span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c"># C++编译选项(优化程度为-O3)</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nb">set</span><span class="p">(</span><span class="s">CMAKE_CXX_FLAGS</span><span class="w"> </span><span class="s2">&quot;${CMAKE_CXX_FLAGS} -w -O3 -g&quot;</span><span class="p">)</span><span class="w">         </span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="c"># 头文件所在的目录</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="nb">include_directories</span><span class="p">(</span><span class="o">${</span><span class="nv">CMAKE_SOURCE_DIR</span><span class="o">}</span><span class="s">/include</span><span class="p">)</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="c"># 所有的源文件路径</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="nb">file</span><span class="p">(</span><span class="s">GLOB_RECURSE</span><span class="w"> </span><span class="s">sources</span><span class="w"> </span><span class="o">${</span><span class="nv">CMAKE_SOURCE_DIR</span><span class="o">}</span><span class="s">/src/*.cpp</span><span class="p">)</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="c"># 可执行文件包含的源文件</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="nb">add_executable</span><span class="p">(</span><span class="s">exe_cmake</span><span class="w"> </span><span class="s">main.cc</span><span class="w"> </span><span class="o">${</span><span class="nv">sources</span><span class="o">}</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="conda">Conda</h2>
+<h3 id="1-anaconda">1 创建Anaconda 环境</h3>
+<p>创建环境前需要对conda进行换源</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>vim<span class="w"> </span>~/.condarc
+</code></pre></div>
+<p>添加</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>channels:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>-<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>-<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>-<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>ssl_verify:<span class="w"> </span><span class="nb">true</span>
+</code></pre></div>
+<p>保存并退出(:wq)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 创建Anaconda 环境</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>&lt;env_name&gt;<span class="w"> </span>&lt;package_names&gt;
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># ex: conda create -n python3 python=3.8 numpy pandas</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># ex: conda create -n hugging_face python=3.7.6</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># 查看现有环境</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>conda<span class="w"> </span>env<span class="w"> </span>list
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="c1"># 切换环境</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>conda<span class="w"> </span>activate<span class="w"> </span>&lt;env_name&gt;
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1"># 退出环境</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>conda<span class="w"> </span>deactivate
+</code></pre></div>
+<h2 id="docker">Docker 文档</h2>
+<h3 id="1">1 容器创建</h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-dit<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>--gpus<span class="w"> </span>all<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>--shm-size<span class="w"> </span>62g<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>-w<span class="w"> </span>/root<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>-v<span class="w"> </span>/home/zwx/model:/model<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>-h<span class="w"> </span>zwx_torch<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>--name<span class="w"> </span>zwx_torch<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>-p<span class="w"> </span><span class="m">20008</span>:22<span class="se">\</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>nvcr.io/nvidia/pytorch:22.09-py3
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># --net=host </span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="c1"># -e DISPLAY=$DISPLAY --privileged=true </span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="c1"># -v /dev:/dev</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>zwx_torch<span class="w"> </span>bash
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-dit<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>--shm-size<span class="w"> </span>510g<span class="w"> </span>-w<span class="w"> </span>/root<span class="w"> </span>-v<span class="w"> </span>/home/zwx/share:/root/share<span class="w"> </span>--net<span class="o">=</span>host<span class="w"> </span>-h<span class="w"> </span>zwx_sps<span class="w"> </span>--name<span class="w"> </span>zwx_sps<span class="w"> </span>nvcr.io/nvidia/pytorch:23.10-py3
+</code></pre></div></p>
+<h3 id="2-docker">2 docker命令</h3>
+<p><strong>2.1 镜像（image）</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 查看镜像文件</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>docker<span class="w"> </span>images
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="c1"># 删除镜像文件</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>docker<span class="w"> </span>rmi<span class="w"> </span>镜像文件id
+</code></pre></div>
+<p><strong>2.2 容器（container）</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 查看运行中的容器</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>docker<span class="w"> </span>ps
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="c1"># 查看所有容器</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>docker<span class="w"> </span>ps<span class="w"> </span>-a
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># 创建并进入容器(镜像文件名)</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>docker<span class="w"> </span>run<span class="w"> </span>-itd<span class="w"> </span>image_name<span class="w"> </span>/bin/bash
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="c1"># 启动容器</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>docker<span class="w"> </span>start<span class="w"> </span>container_name
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c1"># 进入容器（如果从这个容器退出，容器不会停止）</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>container_name<span class="w"> </span>/bin/bash
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="c1"># 退出容器（停止）</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="nb">exit</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="c1"># 退出容器（不停止）</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>ctrl<span class="w"> </span>+<span class="w"> </span>P<span class="w"> </span>+<span class="w"> </span>Q
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="c1"># 删除容器 (无法删除正在运行的容器，强制删除 rm -f)</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>docker<span class="w"> </span>rm<span class="w"> </span>容器id
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="c1"># 重新启动容器</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>docker<span class="w"> </span>restart<span class="w"> </span>容器id
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="c1"># 停止正在运行的容器</span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>docker<span class="w"> </span>stop<span class="w"> </span>容器id
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="c1"># 强制停止正在运行的容器</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>docker<span class="w"> </span><span class="nb">kill</span><span class="w"> </span>容器id
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="c1"># 查看更详细的关于某一个容器的信息</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>docker<span class="w"> </span>inspect<span class="w">  </span>容器id/image
+</code></pre></div>
+<p><strong>2.3 容器转移</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 容器转移</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="c1"># 容器打包为镜像</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>docker<span class="w"> </span>commit<span class="w"> </span>-a<span class="w"> </span>“author”<span class="w"> </span>-m<span class="w"> </span>“the<span class="w"> </span>message”<span class="w"> </span>container_name<span class="w"> </span>image_name:tag
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># 将镜像打成tar包</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>docker<span class="w"> </span>save<span class="w"> </span>-o<span class="w"> </span>name.tar<span class="w"> </span>image_name:tag
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># 文件的跨服务器传输</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>scp<span class="w"> </span>name.tar<span class="w"> </span>zwx@192.168.1.151:/home/zwx/
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="c1"># 从tar包载入镜像</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>docker<span class="w"> </span>load<span class="w"> </span>-i<span class="w"> </span>name.tar
+</code></pre></div>
+<p><strong>2.4 其他实用命令</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>zwx
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>docker<span class="w"> </span>ps<span class="w"> </span>--format<span class="w"> </span><span class="s2">&quot;table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}&quot;</span><span class="w"> </span>-a
+</code></pre></div>
+<!-- [docker容器的导入和导出](https://blog.csdn.net/u014078109/article/details/126243823)
+
+[本地windows vscode远程连接服务器docker容器](https://blog.csdn.net/hxx123520/article/details/127527117)
+
+[Linux如何查看端口](https://blog.csdn.net/jiey0407/article/details/126433640) -->
+
+<!-- ## 其他操作
+
+### 容器连接 -->
+
+<!-- ``` shell
+# 创建一个 python 应用的容器
+# -P :是容器内部端口随机映射到主机的端口
+docker run -d -P training/webapp python app.py
+# -p : 是容器内部端口绑定到指定的主机端口
+docker run -d -p 5000:5000 training/webapp python app.py
+# 指定容器绑定的网络地址
+docker run -d -p 127.0.0.1:5001:5000 training/webapp python app.py
+# 查看端口的绑定情况(adoring_stonebraker为容器名)，输出：127.0.0.1:5001
+docker port adoring_stonebraker 5000
+
+# Docker 容器互联
+# 创建一个新的 Docker 网络（-d：参数指定 Docker 网络类型，有 bridge、overlay）
+docker network create -d bridge test-net
+# 查看当前网络
+docker network ls
+# 运行一个容器并连接到新建的 test-net 网络
+docker run -itd --name test1 --network test-net ubuntu /bin/bash
+``` -->
+
+<p>&lt;!-- ### docker中使用nginx镜像布置静态网站</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 1.导入nginx镜像</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="o">[</span>root@docker1<span class="w"> </span>images<span class="o">]</span><span class="c1"># docker load -i nginx.tar</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="c1"># 2.运行nginx容器</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="o">[</span>root@docker1<span class="w"> </span>images<span class="o">]</span><span class="c1"># docker run -it --name  vm1 nginx bash</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="c1"># 3.容器内设置</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>root@e0d6fcaf179d:/#<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/usr/share/nginx/html
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>root@e0d6fcaf179d:/usr/share/nginx/html<span class="w"> </span><span class="c1"># echo www.orange_lei.com &gt; index.html </span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>root@e0d6fcaf179d:/usr/share/nginx/html<span class="w"> </span><span class="c1"># cat index.html</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="c1"># www.orange_lei.com</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>root@e0d6fcaf179d:/usr/share/nginx/html<span class="w"> </span><span class="c1"># cd /usr/sbin/</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>root@e0d6fcaf179d:/usr/sbin<span class="w"> </span><span class="c1"># ./nginx</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="c1"># 在容器内首先编辑网页html信息，然后启动nginx</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="c1"># 4.查看nginx容器ip</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="c1"># 按下ctrl+p然后按ctrl+q就可以将容器打入后台</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="o">[</span>root@docker1<span class="w"> </span>images<span class="o">]</span><span class="c1"># docker inspect vm1            ##可以查看具体信息</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="c1"># 5.测试</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="o">[</span>root@docker1<span class="w"> </span>images<span class="o">]</span><span class="c1"># curl 172.17.0.2</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="c1"># www.orange_lei.com</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="c1"># 这样一个静态网页就部署好了</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="sb">```</span><span class="w"> </span>--&gt;
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>&lt;!--<span class="w"> </span><span class="sb">```</span>shell
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="c1"># 容器外</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>nginx01<span class="w"> </span>-v<span class="w"> </span>/home/zwx/volume/nginx:/home<span class="w"> </span>-p<span class="w"> </span><span class="m">20101</span>:80<span class="w"> </span>nginx
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>nginx01<span class="w"> </span>/bin/bash
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="c1"># 容器内</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a><span class="nb">cd</span><span class="w"> </span>/usr/share/nginx/html
+<a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a>apt<span class="w"> </span>update
+<a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a>apt<span class="w"> </span>install<span class="w"> </span>vim
+<a id="__codelineno-13-32" name="__codelineno-13-32" href="#__codelineno-13-32"></a>vim<span class="w"> </span>index.html
+<a id="__codelineno-13-33" name="__codelineno-13-33" href="#__codelineno-13-33"></a>nginx
+<a id="__codelineno-13-34" name="__codelineno-13-34" href="#__codelineno-13-34"></a><span class="nb">exit</span>
+<a id="__codelineno-13-35" name="__codelineno-13-35" href="#__codelineno-13-35"></a>
+<a id="__codelineno-13-36" name="__codelineno-13-36" href="#__codelineno-13-36"></a><span class="c1"># 查看挂载是否成功</span>
+<a id="__codelineno-13-37" name="__codelineno-13-37" href="#__codelineno-13-37"></a>docker<span class="w"> </span>inspect<span class="w"> </span>nginx01
+<a id="__codelineno-13-38" name="__codelineno-13-38" href="#__codelineno-13-38"></a>
+<a id="__codelineno-13-39" name="__codelineno-13-39" href="#__codelineno-13-39"></a><span class="c1"># 停止和开始</span>
+<a id="__codelineno-13-40" name="__codelineno-13-40" href="#__codelineno-13-40"></a>docker<span class="w"> </span>stop<span class="w"> </span>nginx01
+<a id="__codelineno-13-41" name="__codelineno-13-41" href="#__codelineno-13-41"></a>docker<span class="w"> </span>start<span class="w"> </span>nginx01
+<a id="__codelineno-13-42" name="__codelineno-13-42" href="#__codelineno-13-42"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>nginx01<span class="w"> </span>/bin/bash
+<a id="__codelineno-13-43" name="__codelineno-13-43" href="#__codelineno-13-43"></a>
+<a id="__codelineno-13-44" name="__codelineno-13-44" href="#__codelineno-13-44"></a><span class="c1"># 更改文件</span>
+<a id="__codelineno-13-45" name="__codelineno-13-45" href="#__codelineno-13-45"></a>cp<span class="w"> </span>/home/index.html<span class="w"> </span>/usr/share/nginx/html/index.html
+<a id="__codelineno-13-46" name="__codelineno-13-46" href="#__codelineno-13-46"></a><span class="sb">```</span><span class="w"> </span>--&gt;
+<a id="__codelineno-13-47" name="__codelineno-13-47" href="#__codelineno-13-47"></a>
+<a id="__codelineno-13-48" name="__codelineno-13-48" href="#__codelineno-13-48"></a>&lt;!--<span class="w"> </span><span class="c1">### ubuntu_01</span>
+<a id="__codelineno-13-49" name="__codelineno-13-49" href="#__codelineno-13-49"></a>
+<a id="__codelineno-13-50" name="__codelineno-13-50" href="#__codelineno-13-50"></a><span class="sb">```</span>shell
+<a id="__codelineno-13-51" name="__codelineno-13-51" href="#__codelineno-13-51"></a><span class="c1"># 安装python</span>
+<a id="__codelineno-13-52" name="__codelineno-13-52" href="#__codelineno-13-52"></a>apt<span class="w"> </span>update
+<a id="__codelineno-13-53" name="__codelineno-13-53" href="#__codelineno-13-53"></a>apt-get<span class="w"> </span>install<span class="w"> </span>python3
+<a id="__codelineno-13-54" name="__codelineno-13-54" href="#__codelineno-13-54"></a>python3<span class="w"> </span>-V
+<a id="__codelineno-13-55" name="__codelineno-13-55" href="#__codelineno-13-55"></a>python3
+<a id="__codelineno-13-56" name="__codelineno-13-56" href="#__codelineno-13-56"></a>ctrl<span class="w"> </span>+<span class="w"> </span>D
+<a id="__codelineno-13-57" name="__codelineno-13-57" href="#__codelineno-13-57"></a>
+<a id="__codelineno-13-58" name="__codelineno-13-58" href="#__codelineno-13-58"></a><span class="c1"># 换源</span>
+<a id="__codelineno-13-59" name="__codelineno-13-59" href="#__codelineno-13-59"></a>apt-get<span class="w"> </span>install<span class="w"> </span>vim
+<a id="__codelineno-13-60" name="__codelineno-13-60" href="#__codelineno-13-60"></a>vim<span class="w"> </span>/etc/apt/sources.list
+<a id="__codelineno-13-61" name="__codelineno-13-61" href="#__codelineno-13-61"></a><span class="w"> </span><span class="c1"># 清华源</span>
+<a id="__codelineno-13-62" name="__codelineno-13-62" href="#__codelineno-13-62"></a><span class="w"> </span>deb<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-63" name="__codelineno-13-63" href="#__codelineno-13-63"></a><span class="w"> </span>deb-src<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-64" name="__codelineno-13-64" href="#__codelineno-13-64"></a><span class="w"> </span>deb<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-updates<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-65" name="__codelineno-13-65" href="#__codelineno-13-65"></a><span class="w"> </span>deb-src<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-updates<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-66" name="__codelineno-13-66" href="#__codelineno-13-66"></a><span class="w"> </span>deb<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-backports<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-67" name="__codelineno-13-67" href="#__codelineno-13-67"></a><span class="w"> </span>deb-src<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-backports<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-68" name="__codelineno-13-68" href="#__codelineno-13-68"></a><span class="w"> </span>deb<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-security<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-69" name="__codelineno-13-69" href="#__codelineno-13-69"></a><span class="w"> </span>deb-src<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-security<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-70" name="__codelineno-13-70" href="#__codelineno-13-70"></a><span class="w"> </span>deb<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-proposed<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-71" name="__codelineno-13-71" href="#__codelineno-13-71"></a><span class="w"> </span>deb-src<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/ubuntu/<span class="w"> </span>bionic-proposed<span class="w"> </span>main<span class="w"> </span>restricted<span class="w"> </span>universe<span class="w"> </span>multiverse
+<a id="__codelineno-13-72" name="__codelineno-13-72" href="#__codelineno-13-72"></a><span class="c1">###</span>
+<a id="__codelineno-13-73" name="__codelineno-13-73" href="#__codelineno-13-73"></a>apt<span class="w"> </span>update
+<a id="__codelineno-13-74" name="__codelineno-13-74" href="#__codelineno-13-74"></a>
+<a id="__codelineno-13-75" name="__codelineno-13-75" href="#__codelineno-13-75"></a><span class="c1"># yolov5</span>
+<a id="__codelineno-13-76" name="__codelineno-13-76" href="#__codelineno-13-76"></a>apt<span class="w"> </span>install<span class="w"> </span>git
+<a id="__codelineno-13-77" name="__codelineno-13-77" href="#__codelineno-13-77"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ultralytics/yolov5.git
+<a id="__codelineno-13-78" name="__codelineno-13-78" href="#__codelineno-13-78"></a>apt<span class="w"> </span>install<span class="w"> </span>python3-pip
+<a id="__codelineno-13-79" name="__codelineno-13-79" href="#__codelineno-13-79"></a>pip3<span class="w"> </span>-V
+<a id="__codelineno-13-80" name="__codelineno-13-80" href="#__codelineno-13-80"></a>pip3<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<a id="__codelineno-13-81" name="__codelineno-13-81" href="#__codelineno-13-81"></a><span class="sb">```</span><span class="w"> </span>--&gt;
+</code></pre></div>
+<h2 id="git">Git</h2>
+<p><a href="https://blog.csdn.net/bjbz_cxy/article/details/116703787?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168879325716800211587219%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=168879325716800211587219&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-116703787-null-null.142^v88^control,239^v2^insert_chatgpt&amp;utm_term=git%20&amp;spm=1018.2226.3001.4187">git教程</a></p>
+<h3 id="1-gitee">1 Gitee上传代码</h3>
+<p><strong>1.1   首次上传</strong></p>
+<p>1   在Gitee上创建远程仓库git_test</p>
+<p>2   配置用户名和邮箱</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;zwx&quot;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;1728026380@qq.com&quot;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># 检查配置</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># git config user.name</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># git config user.email</span>
+</code></pre></div>
+<p>3   本地仓库</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># 进入本地项目目录</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># 初始化本地仓库</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>git<span class="w"> </span>init
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="c1"># 添加项目目录下所有文件至暂存区</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="c1"># 查看当前git状态</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="c1"># git status</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="c1"># 提交到本地仓库</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s1">&#39;本次提交的说明&#39;</span>
+</code></pre></div>
+<p>4   远程仓库</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># 在远程仓库复制http链接</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="c1"># 如 https://gitee.com/zxmh/git_test.git</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># 将本地仓库与远程仓库相连接</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://gitee.com/zxmh/git_test.git
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="c1"># 将本地仓库中的文件推送至远程仓库中</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master
+</code></pre></div>
+<p><strong>1.2   继续上传</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s1">&#39;本次提交的说明&#39;</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master
+</code></pre></div>
+<p><strong>1.3   拉取上传</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 拉取代码</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://gitee.com/zxmh/git_test.git
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1"># 上传</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="nb">cd</span><span class="w"> </span>git_test
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s1">&#39;本次提交的说明&#39;</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master
+</code></pre></div>
+<h3 id="2-log">2 log</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># 显示日志</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>git<span class="w"> </span>log<span class="w"> </span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="c1"># 图形化显示日志</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>git<span class="w"> </span>log<span class="w"> </span>--all<span class="w"> </span>--graph<span class="w"> </span>--decorate
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="c1"># 更紧凑的视图（最好用）</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>git<span class="w"> </span>log<span class="w"> </span>--all<span class="w"> </span>--graph<span class="w"> </span>--decorate<span class="w"> </span>--oneline
+</code></pre></div>
+<h3 id="3-diff">3 diff</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 显示当前状态与上一次commit的不同</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>git<span class="w"> </span>diff
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="c1"># 显示当前状态与commit1的不同</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>git<span class="w"> </span>diff<span class="w"> </span>commit1
+</code></pre></div>
+<h3 id="4-branch">4 branch</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># 创建分支</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>git<span class="w"> </span>branch<span class="w"> </span>name
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="c1"># 切换分支</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>git<span class="w"> </span>checkout<span class="w"> </span>name
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="c1"># 创建并切换分支</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>git<span class="w"> </span>checkout<span class="w"> </span>-b<span class="w"> </span>name
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="c1"># 查看分支</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>git<span class="w"> </span>branch
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="c1"># 查看分支详细信息</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>git<span class="w"> </span>branch<span class="w"> </span>-vv
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a><span class="c1"># 合并name分支到当前分支上来</span>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>git<span class="w"> </span>merge<span class="w"> </span>name
+</code></pre></div>
+<h3 id="5-remote">5 remote</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># 查看本地仓库的远程仓库</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>git<span class="w"> </span>remote<span class="w"> </span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="c1"># 添加远程仓库（origin是远程仓库的约定俗成的名字）（url可以是网址或者本地路径）</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>&lt;name&gt;<span class="w"> </span>&lt;url&gt;
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="c1"># 上传</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>git<span class="w"> </span>push<span class="w"> </span>&lt;remote<span class="w"> </span>name&gt;<span class="w"> </span>&lt;<span class="nb">local</span><span class="w"> </span>branch&gt;:&lt;remote<span class="w"> </span>branch&gt;
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="c1"># 下载</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;url&gt;<span class="w"> </span>&lt;dir<span class="w"> </span>name&gt;
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="c1"># 不获取版本历史信息，更加快速</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>git<span class="w"> </span>clone<span class="w"> </span>&lt;url&gt;<span class="w"> </span>&lt;dir<span class="w"> </span>name&gt;<span class="w"> </span>--shallow
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="c1"># 同步远程仓库的更改到本地</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>git<span class="w"> </span>fetch<span class="w"> </span>&lt;remote<span class="w"> </span>name&gt;
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="c1"># 同步远程仓库的更改到本地并与当前分支合并</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>git<span class="w"> </span>pull<span class="w"> </span>&lt;remote<span class="w"> </span>name&gt;
+</code></pre></div>
+<h3 id="6-stash">6 stash</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># 将工作目录恢复到上一次提交的状态</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>git<span class="w"> </span>stash
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="c1"># 撤回stash的恢复</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>git<span class="w"> </span>stash<span class="w"> </span>pop
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># 拉取代码</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://gitee.com/zxmh/git_test.git
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="c1"># 创建分支</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>git<span class="w"> </span>branch<span class="w"> </span>name
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="c1"># 切换分支</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>git<span class="w"> </span>checkout<span class="w"> </span>name
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="nb">cd</span><span class="w"> </span>git_test
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="c1"># 将当前文件夹加入到暂存区</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>git<span class="w"> </span>add<span class="w"> </span>.<span class="w"> </span>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="c1"># 提交到本地仓库</span>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s1">&#39;本次提交的说明&#39;</span>
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="c1"># 提交到远程仓库</span>
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>master
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="c1"># 显示日志</span>
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>git<span class="w"> </span>log<span class="w"> </span>--all<span class="w"> </span>--graph<span class="w"> </span>--decorate<span class="w"> </span>--oneline
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a><span class="c1"># 更新远程仓库</span>
+<a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a>git<span class="w"> </span>fetch<span class="w"> </span>--all
+</code></pre></div>
+<h2 id="vim">vim</h2>
+<h3 id="1-vim">1 vim个人常用命令</h3>
+<ol>
+<li>必要的</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>vim<span class="w"> </span>filename<span class="w"> </span><span class="c1"># 使用vim编辑文件（不存在会创建）</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>i<span class="w"> </span><span class="c1"># 进入insert模式（normal）</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>Esc<span class="w"> </span><span class="c1"># 返回normal模式（insert）</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>ctrl+shift+v<span class="w"> </span><span class="c1"># 粘贴（insert）</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>:wq<span class="w"> </span><span class="c1"># 保存并退出（normal）</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>:q<span class="w"> </span><span class="c1"># 不保存直接退出（normal）</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>:q!<span class="w"> </span><span class="c1"># 不保存强制退出（normal）</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>:w<span class="w"> </span><span class="c1"># 保存但不退出</span>
+</code></pre></div>
+<ol>
+<li>高效的</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>G<span class="w"> </span><span class="c1"># 调到最后一行（normal）</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>o<span class="w"> </span><span class="c1"># 在光标所在行的下插入新的一行（normal）与G配合实现文档尾部添加!</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>ctrl<span class="w"> </span>+<span class="w"> </span>d<span class="w"> </span><span class="c1"># 向下翻半屏（normal）</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>行号+G<span class="w"> </span><span class="c1"># 快速定位光标到指定行（normal）</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>gg<span class="w"> </span><span class="c1"># 调到首行（normal）</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>ctrl<span class="w"> </span>+<span class="w"> </span>u<span class="w"> </span><span class="c1"># 向上翻半屏（normal）</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>dd<span class="w"> </span><span class="c1"># 剪切（删除）（normal）</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>p<span class="w"> </span><span class="c1"># 粘贴（normal）</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>yy<span class="w"> </span><span class="c1"># 复制（normal）</span>
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>u<span class="w"> </span><span class="c1"># 撤销（normal）</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>crtl+r<span class="w"> </span><span class="c1"># 重做（normal）</span>
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>/内容<span class="w"> </span><span class="c1"># 搜索内容</span>
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>N/n<span class="w"> </span><span class="c1"># 在搜索结果中切换上/下一个结果</span>
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>:s/要替换的关键词/替换后的关键词#<span class="w"> </span>只替换光标所在这一行的第一个满足条件的结果
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>:%s/要替换的关键词/替换后的关键词/g<span class="w"> </span><span class="c1"># 替换全部的关键词</span>
+<a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a>
+<a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a>:set<span class="w"> </span>nu<span class="w"> </span><span class="c1"># 显示行号</span>
+<a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a>:set<span class="w"> </span>nonu<span class="w"> </span><span class="c1"># 隐藏行号</span>
+<a id="__codelineno-26-23" name="__codelineno-26-23" href="#__codelineno-26-23"></a>
+<a id="__codelineno-26-24" name="__codelineno-26-24" href="#__codelineno-26-24"></a><span class="c1"># 复制多行操作</span>
+<a id="__codelineno-26-25" name="__codelineno-26-25" href="#__codelineno-26-25"></a><span class="c1"># 第一步：在命令模式下，直接按小v，进入可视化模式</span>
+<a id="__codelineno-26-26" name="__codelineno-26-26" href="#__codelineno-26-26"></a><span class="c1"># 第二步：使用方向键↑ ↓ ← →选择要复制的内容，然后按y键</span>
+<a id="__codelineno-26-27" name="__codelineno-26-27" href="#__codelineno-26-27"></a><span class="c1"># 第三步：移动光标，停在需要粘贴的位置，按p键进行粘贴操作</span>
+</code></pre></div>
+<h3 id="2">2 模式</h3>
+<p><strong>2.1 插入模式</strong></p>
+<table>
+<thead>
+<tr>
+<th>i</th>
+<th>光标前插入( insert)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>在行首插入</td>
+</tr>
+<tr>
+<td>a</td>
+<td>在光标前插入(append)</td>
+</tr>
+<tr>
+<td>A</td>
+<td>在行尾插入</td>
+</tr>
+<tr>
+<td>o</td>
+<td>在下一行插入(one line)</td>
+</tr>
+<tr>
+<td>O</td>
+<td>在上一行插入</td>
+</tr>
+<tr>
+<td>ESC</td>
+<td>jj Capslok 退出插入模式</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2.2 可视模式</strong></p>
+<table>
+<thead>
+<tr>
+<th>v</th>
+<th>进入</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC   v</td>
+<td>退出</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2.3 命令模式</strong></p>
+<p>： 进入</p>
+<p>ESC 退出</p>
+<p><strong>光标移动</strong></p>
+<p>普通模式下：</p>
+<p>h ← j ↓ k ↑ l →</p>
+<table>
+<thead>
+<tr>
+<th>w</th>
+<th style="text-align: left;">跳到下一个单词开头(word)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>b</td>
+<td style="text-align: left;">跳到本单词或下一个单词结尾(back)</td>
+</tr>
+<tr>
+<td>e</td>
+<td style="text-align: left;">跳到本单词或上一个单词开头(end)</td>
+</tr>
+<tr>
+<td>ge</td>
+<td style="text-align: left;">跳到上一个单词结尾</td>
+</tr>
+<tr>
+<td>0</td>
+<td style="text-align: left;">跳到行首</td>
+</tr>
+<tr>
+<td>^</td>
+<td style="text-align: left;">跳到从行首开始第一个非空字符</td>
+</tr>
+<tr>
+<td>$</td>
+<td style="text-align: left;">跳到行尾</td>
+</tr>
+<tr>
+<td>gg</td>
+<td style="text-align: left;">跳到第一行</td>
+</tr>
+<tr>
+<td>G</td>
+<td style="text-align: left;">跳到最后一行</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="image-20220203144707592" src="https://zwx-pic.oss-cn-beijing.aliyuncs.com/img/01b485d5d0a109664019ee84c7e0370b.png" /> </p>
+<h3 id="3">3 操作符</h3>
+<p><img alt="image-20220203145538127" src="https://zwx-pic.oss-cn-beijing.aliyuncs.com/img/af4ca98a31f2f538109af9a10b4863ec.png" /> </p>
+<h3 id="4">4 操作符+动作</h3>
+<table>
+<thead>
+<tr>
+<th>p</th>
+<th>粘贴</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u</td>
+<td>撤销动作+操作符</td>
+</tr>
+<tr>
+<td>ciw</td>
+<td>选中单词删除并进入插入模式</td>
+</tr>
+<tr>
+<td>yiw</td>
+<td>选中并复制单词</td>
+</tr>
+<tr>
+<td>diw</td>
+<td>选中并删除单词</td>
+</tr>
+<tr>
+<td>ndd/ncc/nyy</td>
+<td>向下删除/修改/复制n行,包括当前行</td>
+</tr>
+<tr>
+<td>d/c/yf{char}</td>
+<td>删除/修改/复制到向后的char字符</td>
+</tr>
+<tr>
+<td>d/c/y ^/$</td>
+<td>删除/修改/复制到开头/结尾</td>
+</tr>
+<tr>
+<td>die</td>
+<td>删除整个文件</td>
+</tr>
+<tr>
+<td>cie</td>
+<td>删除整个文件并进入写入模式</td>
+</tr>
+</tbody>
+</table>
+<p>v+各种操作（可以看到啥被选中了）+操作符（y/c/d）</p>
+<h3 id="5">5 大小写转换</h3>
+<p><img src="https://zwx-pic.oss-cn-beijing.aliyuncs.com/img/3a6cb9f53dde063073ae57117d3daa80.png" alt="image-20220203155235967" style="zoom: 50%;" /> </p>
+<h2 id="ssh">ssh</h2>
+<h3 id="1-ssh-docker">1 ssh 远程连接 docker 容器</h3>
+<p><strong>1.1 创建和运行容器</strong></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># 创建容器</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-itd<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>--name<span class="w"> </span>&lt;container_name&gt;<span class="w"> </span>-p<span class="w"> </span>&lt;your_port&gt;:22<span class="w"> </span>-v<span class="w"> </span>&lt;host_dir_name&gt;:/home<span class="w"> </span>&lt;image_name&gt;<span class="w"> </span>/bin/bash
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># 启动容器</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>docker<span class="w"> </span>start<span class="w"> </span>&lt;container_name&gt;<span class="w"> </span><span class="p">&amp;</span><span class="w"> </span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-it<span class="w"> </span>&lt;container_name&gt;<span class="w"> </span>bash
+</code></pre></div></p>
+<p><strong>1.2 容器内配置</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># 修改root用户密码(必须要有)</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>passwd
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="c1"># 添加用户</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="c1"># apt install sudo</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="c1"># sudo adduser username</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="c1"># sudo vim /etc/sudoers # 在root的下一行添加username的行，退出用:wq!</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="c1"># 安装ssh</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>apt<span class="w"> </span>update
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>apt<span class="w"> </span>install<span class="w"> </span>ssh
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a><span class="c1"># 修改ssh配置文件</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>vim<span class="w"> </span>/etc/ssh/sshd_config<span class="w">  </span>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a><span class="c1"># 将PasswordAuthentication设置成yes，允许非root用户使用密码远程连接</span>
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a><span class="c1"># （已弃用）将PermitRootLogin 设置为yes  #允许root用户使用ssh登录</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a><span class="c1"># 将公钥放置到远端服务器上，将公钥附加到~/.ssh/authorized_keys中，如cat id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</span>
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a><span class="c1"># 确保~/.ssh/目录的权限700，~/.ssh/authorized_keys文件的权限是600</span>
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a><span class="c1"># 启动sshd服务</span>
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>/etc/init.d/ssh<span class="w"> </span>restart<span class="w"> </span>
+</code></pre></div>
+<p><strong>1.3 连接容器</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>ip：宿主机ip
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>端口号：第一步的<span class="w"> </span>&lt;your_port&gt;
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>用户名：root
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>密码：passwd设置的密码
+</code></pre></div>
+<h3 id="2-ssh">2 ssh免密登录</h3>
+<p>windows用户目录下的.ssh目录下的id_rsa.pub为公钥</p>
+<p>将其上传到需要进行免密登录的用户的主目录下的.ssh文件夹中，并且重命名为authorized_keys，如：<code>/home/zwx/.ssh/authorized_keys</code></p>
+<h3 id="3_1">3 端口转发</h3>
+<p>这里将服务器7899端口转发到PC clash 7890 端口，走PC校园网，不耗费服务器流量</p>
+<p>PC端（server-port为ssh连接所用端口）</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>ssh<span class="w"> </span>-NR<span class="w"> </span><span class="m">7899</span>:127.0.0.1:7890<span class="w"> </span>user@server-ip<span class="w"> </span>-p<span class="w"> </span>server-port
+</code></pre></div>
+<p>服务器端</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">https_proxy</span><span class="o">=</span>http://127.0.0.1:7899
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">http_proxy</span><span class="o">=</span>http://127.0.0.1:7899
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="nv">all_proxy</span><span class="o">=</span>socks5://127.0.0.1:7899
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">HF_ENDPOINT</span><span class="o">=</span>https://hf-mirror.com
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1"># alias setproxy=&#39;function _setproxy() { export https_proxy=http://127.0.0.1:$1 &amp;&amp; export http_proxy=http://127.0.0.1:$1 &amp;&amp; all_proxy=socks5://127.0.0.1:$1; }; _setproxy&#39;</span>
+</code></pre></div></p>
+<p>下载模型权重（<a href="https://hf-mirror.com/">https://hf-mirror.com/</a>）</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>huggingface-cli<span class="w"> </span>download<span class="w"> </span>--resume-download<span class="w"> </span>facebook/opt-66b<span class="w"> </span>--local-dir<span class="w"> </span>YOUR_PATH<span class="w"> </span>--exclude<span class="w"> </span>*.msgpack<span class="w"> </span>*.h5<span class="w"> </span>*.safetensors
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># cp -r ~/.cache/huggingface/hub/models--XXX /home/share/models</span>
+</code></pre></div></p>
+<h2 id="_1">图床</h2>
+<h3 id="1_1">1 图床配置</h3>
+<p>Typora + PicGo + 阿里云OSS 图床</p>
+<p><a href="https://blog.csdn.net/qq_51808107/article/details/124044961">手把手教你Typora图床配置(PicGo+阿里云OSS/腾讯云COS)</a></p>
+<p><strong>picgo配置</strong></p>
+<p><img alt="image-20230804111437131" src="https://zwx-pic.oss-cn-beijing.aliyuncs.com/img/image-20230804111437131.png" /></p>
+<p><strong>typora配置</strong></p>
+<p><img alt="image-20230804111530818" src="https://zwx-pic.oss-cn-beijing.aliyuncs.com/img/image-20230804111530818.png" /></p>
+<h2 id="_2">别名</h2>
+<h3 id="1-alias">1 alias 命令</h3>
+<p>输入一长串包含许多选项的命令会非常麻烦。因此，大多数 shell 都支持设置别名。shell 的别名相当于一个长命令的缩写，shell 会自动将其替换成原本的命令。例如，bash 中的别名语法如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>alias alias_name=&quot;command_to_alias arg1 arg2&quot;
+</code></pre></div>
+<p>注意， <code>=</code>两边是没有空格的，因为 <a href="https://www.man7.org/linux/man-pages/man1/alias.1p.html"><code>alias</code></a> 是一个 shell 命令，它只接受一个参数。</p>
+<p>别名有许多很方便的特性:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="c1"># 查看现有的别名</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="nb">alias</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="c1"># 创建常用命令的缩写</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">ll</span><span class="o">=</span><span class="s2">&quot;ls -lh&quot;</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="c1"># 能够少输入很多</span>
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">gs</span><span class="o">=</span><span class="s2">&quot;git status&quot;</span>
+<a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">gc</span><span class="o">=</span><span class="s2">&quot;git commit&quot;</span>
+<a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">v</span><span class="o">=</span><span class="s2">&quot;vim&quot;</span>
+<a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>
+<a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a><span class="c1"># 手误打错命令也没关系</span>
+<a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">sl</span><span class="o">=</span>ls
+<a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a>
+<a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a><span class="c1"># 重新定义一些命令行的默认行为</span>
+<a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">mv</span><span class="o">=</span><span class="s2">&quot;mv -i&quot;</span><span class="w">           </span><span class="c1"># -i prompts before overwrite</span>
+<a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">mkdir</span><span class="o">=</span><span class="s2">&quot;mkdir -p&quot;</span><span class="w">     </span><span class="c1"># -p make parent dirs as needed</span>
+<a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">df</span><span class="o">=</span><span class="s2">&quot;df -h&quot;</span><span class="w">           </span><span class="c1"># -h prints human readable format</span>
+<a id="__codelineno-37-19" name="__codelineno-37-19" href="#__codelineno-37-19"></a>
+<a id="__codelineno-37-20" name="__codelineno-37-20" href="#__codelineno-37-20"></a><span class="c1"># 别名可以组合使用</span>
+<a id="__codelineno-37-21" name="__codelineno-37-21" href="#__codelineno-37-21"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">la</span><span class="o">=</span><span class="s2">&quot;ls -A&quot;</span>
+<a id="__codelineno-37-22" name="__codelineno-37-22" href="#__codelineno-37-22"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">lla</span><span class="o">=</span><span class="s2">&quot;la -l&quot;</span>
+<a id="__codelineno-37-23" name="__codelineno-37-23" href="#__codelineno-37-23"></a>
+<a id="__codelineno-37-24" name="__codelineno-37-24" href="#__codelineno-37-24"></a><span class="c1"># 忽略某个别名</span>
+<a id="__codelineno-37-25" name="__codelineno-37-25" href="#__codelineno-37-25"></a><span class="se">\l</span>s
+<a id="__codelineno-37-26" name="__codelineno-37-26" href="#__codelineno-37-26"></a><span class="c1"># 或者禁用别名</span>
+<a id="__codelineno-37-27" name="__codelineno-37-27" href="#__codelineno-37-27"></a><span class="nb">unalias</span><span class="w"> </span>la
+<a id="__codelineno-37-28" name="__codelineno-37-28" href="#__codelineno-37-28"></a>
+<a id="__codelineno-37-29" name="__codelineno-37-29" href="#__codelineno-37-29"></a><span class="c1"># 获取别名的定义</span>
+<a id="__codelineno-37-30" name="__codelineno-37-30" href="#__codelineno-37-30"></a><span class="nb">alias</span><span class="w"> </span>ll
+<a id="__codelineno-37-31" name="__codelineno-37-31" href="#__codelineno-37-31"></a><span class="c1"># 会打印 ll=&#39;ls -lh&#39;</span>
+</code></pre></div>
+<p>值得注意的是，在默认情况下 shell 并不会保存别名。为了让别名持续生效，您需要将配置放进 shell 的启动文件里，像是<code>.bashrc</code> 或 <code>.zshrc</code>。</p>
+<p><code>sudo vim ~/.bashrc</code>文件末尾加入要持续生效的命令即可。</p>
+<h3 id="2_1">2 个人常用的别名</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">sau</span><span class="o">=</span><span class="s1">&#39;sudo apt update&#39;</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">sai</span><span class="o">=</span><span class="s1">&#39;sudo apt install&#39;</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">bashrc</span><span class="o">=</span><span class="s1">&#39;sudo vim ~/.bashrc&#39;</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">s</span><span class="o">=</span><span class="s1">&#39;sudo&#39;</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">sds</span><span class="o">=</span><span class="s1">&#39;sudo docker start&#39;</span>
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">sde</span><span class="o">=</span><span class="s1">&#39;sudo docker exec -it&#39;</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">gc</span><span class="o">=</span><span class="s1">&#39;git clone&#39;</span>
+<a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a>
+<a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a><span class="nb">alias</span><span class="w"> </span><span class="nv">setproxy</span><span class="o">=</span><span class="s1">&#39;function _setproxy() { export https_proxy=http://127.0.0.1:$1 &amp;&amp; export http_proxy=http://127.0.0.1:$1 &amp;&amp; all_proxy=socks5://127.0.0.1:$1; }; _setproxy&#39;</span>
+</code></pre></div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      最后更新:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2024年9月26日</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 ZWX
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["header.autohide", "navigation.tracking", "navigation.tabs.sticky", "toc.follow", "navigation.instant", "navigation.instant.progress", "search.suggest", "search.share", "content.code.copy"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
