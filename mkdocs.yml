@@ -2,17 +2,19 @@ nav:
   - Home: index.md
   - Python: python_study.md
   - STL: STL.md
-  - Cmake: cmake.md
-  - Conda: conda.md
-  - Docker: docker.md
-  - Git: git.md
-  - Vim: vim.md
-  - alias: alias.md
-  - Ubuntu: ubuntu_apt.md
-  - Linux: linux_command.md
-  - SSH: ssh.md
-  - 图床: photo_bed.md
+  - Tools: tools.md
+  # - Cmake: cmake.md
+  # - Conda: conda.md
+  # - Docker: docker.md
+  # - Git: git.md
+  # - Vim: vim.md
+  # - alias: alias.md
+  # - Ubuntu换源: ubuntu_apt.md
+  # - Linux命令: linux_command.md
+  # - SSH: ssh.md
+  # - 图床: photo_bed.md
   - 零碎知识: knowledge.md
+  - 句子摘抄: zhaichao.md
   - 链接收藏: link.md
   - 论文收藏: pdfs.md
   - 博客收藏: blog.md
