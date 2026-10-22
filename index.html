@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Homepage</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="container-fluid py-4">
+        <section class="about-section pb-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <div id="profile-header" class="text-center mb-5">
+                                <h2 id="profile-name" class="h3 fw-bold mb-1"></h2>
+                            </div>
+
+                            <section class="academic-section" aria-labelledby="about-me-title">
+                                <h3 id="about-me-title" class="academic-heading">About Me</h3>
+                                <p id="about-text" class="academic-text"></p>
+                            </section>
+
+                            <section class="academic-section" aria-labelledby="interests-title">
+                                <h3 id="interests-title" class="academic-heading">Research Interests</h3>
+                                <div id="research-interests" class="research-tags" aria-label="Research interests"></div>
+                            </section>
+
+                            <section class="academic-section" aria-labelledby="news-title">
+                                <h3 id="news-title" class="academic-heading">News</h3>
+                                <ul id="news-list" class="academic-list news-list"></ul>
+                            </section>
+
+                            <section class="academic-section" aria-labelledby="publications-title">
+                                <h3 id="publications-title" class="academic-heading">Publications</h3>
+                                <ol id="publication-list" class="academic-list publication-list"></ol>
+                            </section>
+
+                            <section class="academic-section" aria-labelledby="education-title">
+                                <h3 id="education-title" class="academic-heading">Education</h3>
+                                <ul id="education-list" class="academic-list education-list"></ul>
+                            </section>
+
+                            <div id="contact-section" class="mb-3">
+                                <h3 class="about-label">Contact</h3>
+                                <div id="contact-list" class="d-flex justify-content-center gap-4"></div>
+                            </div>
+
+                            <hr id="updated-divider" class="about-divider">
+                            <p id="updated-section" class="text-center text-muted small mb-0">
+                                Last updated: <span id="last-updated"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Editable content and page logic -->
+    <script src="./content.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>

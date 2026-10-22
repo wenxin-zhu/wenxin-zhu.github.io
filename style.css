@@ -1,0 +1,203 @@
+/* Academic homepage styles */
+
+:root {
+    --primary-color: #4361ee;
+}
+
+/* 基础样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 主内容区域 */
+main.container-fluid {
+    min-height: calc(100vh - 160px);
+}
+
+/* 关于 */
+.academic-section {
+    margin-bottom: 2.25rem;
+}
+
+.academic-heading {
+    border-bottom: 1px solid #e7eaf0;
+    color: #1f2937;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 0.65rem;
+}
+
+.academic-text {
+    color: #4b5563;
+    font-size: 0.97rem;
+    line-height: 1.9;
+    margin: 0;
+}
+
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.research-tags span {
+    background: #eef2ff;
+    border: 1px solid #dbe3ff;
+    border-radius: 999px;
+    color: #3949ab;
+    font-size: 0.88rem;
+    padding: 0.35rem 0.8rem;
+}
+
+.academic-list {
+    color: #4b5563;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.academic-list li + li {
+    margin-top: 1rem;
+}
+
+.news-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-list li {
+    align-items: baseline;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 5rem 1fr;
+}
+
+.news-list time,
+.education-list time {
+    color: #7c8494;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.publication-list > li {
+    padding-left: 0.35rem;
+}
+
+.publication-list p {
+    margin-bottom: 0.35rem;
+}
+
+.publication-title {
+    color: #252b38;
+    font-weight: 650;
+}
+
+.publication-links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.55rem;
+}
+
+.disabled-link {
+    border: 1px solid #d9dee8;
+    border-radius: 4px;
+    color: #8a93a3;
+    font-size: 0.75rem;
+    padding: 0.12rem 0.5rem;
+}
+
+.publication-link {
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    padding: 0.12rem 0.5rem;
+    text-decoration: none;
+}
+
+.publication-link:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.education-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.about-label {
+    color: #999;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-link {
+    align-items: center;
+    color: #777;
+    display: inline-flex;
+    font-size: 0.95rem;
+    gap: 0.4em;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.about-link:hover {
+    color: var(--primary-color);
+}
+
+.about-link .bi {
+    font-size: 1.2rem;
+}
+
+.about-divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 0 auto 1.5rem;
+    opacity: 1;
+    width: 60px;
+}
+
+@media (max-width: 576px) {
+    .news-list li {
+        gap: 0.25rem;
+        grid-template-columns: 1fr;
+    }
+
+    .education-list li {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
